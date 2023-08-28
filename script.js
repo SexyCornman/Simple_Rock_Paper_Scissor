@@ -56,5 +56,8 @@ function gameStart() {
 }
 
 
-// write function that construct a game of rock paper scissor where you play 5 round and keep score and report the winner at the end
-// write function to restart a round
+// write function that construct a game of rock paper scissor where you play 5 round and keep score and report the winner at the end.
+// write a function that record a score for each round.
+
+// write function to end a game when the winner is declared.
+
