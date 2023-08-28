@@ -5,16 +5,17 @@ let gameChoice = ["Rock","Paper","Scissor"]
 let computerChoice
 function getComputerChoice() {
     computerChoice = gameChoice[(Math.floor(Math.random() * gameChoice.length))];   
-
+    console.log(computerChoice);
 }
 
-getComputerChoice();
-console.log(computerChoice);
+
+
 
 
 // write function get user input ranging from rock, paper, scissor.
 // write function that "play" a single round of rock paper scissor and declare the winner
 function playerChoiceRock() {
+    getComputerChoice()
     if (computerChoice === "Paper") {
         alert("You Suck paper beat Rock!")
     } else if (computerChoice === "Rock") {
@@ -22,9 +23,11 @@ function playerChoiceRock() {
     } else if (computerChoice === "Scissor") {
         alert ("You win! fucking hell")
     }
-    
+   
+
 }
 function playerChoicePaper() {
+    getComputerChoice()
     if (computerChoice === "Paper") {
         alert("It's a tie you both suck!")
     } else if (computerChoice === "Rock") {
@@ -36,6 +39,7 @@ function playerChoicePaper() {
 }
 
 function playerChoiceScissor() {
+    getComputerChoice()
     if (computerChoice === "Paper") {
         alert("You win! fucking hel!")
     } else if (computerChoice === "Rock") {
