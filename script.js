@@ -63,10 +63,7 @@ function checkScore() {
     
     if (computerScore !== 5 && playerScore !== 5) {
         alert ("Now Fight");
-        // i'm trying to make a scoreboard here still don't know how
-        // humanScore = playerScore;
-        // botScore = computerScore;
-      // write function to end a game when the winner is declared.      
+        
     } else if (computerScore === 5) {
         alert ("The mankind is DEAD you lose!");
         alert ("Prepare for another round!");
@@ -85,9 +82,6 @@ function checkScore() {
     alert("The Computer score " + computerScore + " Your Score " + playerScore );
    
 }
-// i dont know how these work just yet.
-// let humanScore = document.getElementById('humanscore');
-// let botScore = document.getElementById('botscore')
 
 
 
