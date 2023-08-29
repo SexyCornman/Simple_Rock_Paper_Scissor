@@ -52,34 +52,6 @@ function gameStart() {
         alert ("You win! fucking hell");
         playerScore++ ;
     }  
-// this is the old code line of the function above in case something went wrong and for revisit purpose.
-    // if (playerChoice === "Rock" && computerChoice === "Paper") {
-    //     alert("You Suck paper beat Rock!");
-    //     computerScore++ ;
-    // } else if (playerChoice === "Rock" && computerChoice === "Rock") {
-    //     alert("It's a tie you both suck!");
-    // } else if (playerChoice === "Rock" && computerChoice === "Scissor") {
-    //     alert ("You win! fucking hell");
-    //     playerScore++ ;
-    // } 
-    // else if (playerChoice === "Paper" && computerChoice === "Paper") {
-    //     alert("It's a tie you both suck!")
-    // } else if (playerChoice === "Paper" && computerChoice === "Rock") {
-    //     alert("You win! fucking hell");
-    //     playerScore++ ;
-    // } else if (playerChoice === "Paper" && computerChoice === "Scissor") {
-    //     alert ("You Suck scissor beat paper!")
-    //     computerScore++ ;
-    // }
-    // else if (playerChoice === "Scissor" && computerChoice === "Paper") {
-    //     alert("You win! fucking hell!");
-    //     playerScore++ ;
-    // } else if (playerChoice === "Scissor" && computerChoice === "Rock") {
-    //     alert("You Suck rock beat scissor! ");
-    //     computerScore++ ;
-    // } else if (playerChoice === "Scissor" && computerChoice === "Scissor") {
-    //     alert ("It's a tie you both suck!!");
-    // }
     checkScore();
 }
 
