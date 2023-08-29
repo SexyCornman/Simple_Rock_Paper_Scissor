@@ -39,6 +39,7 @@ function gameStart() {
     (playerChoice === "Paper" && computerChoice === "Scissor") ||
     (playerChoice === "Scissor" && computerChoice === "Rock")){
         alert("You Suck " + computerChoice + " beat " + playerChoice) ;
+        // write a function that record a score for each round.
         computerScore++ ;
    
     } else if ((playerChoice === "Rock" && computerChoice === "Rock") ||
@@ -57,7 +58,7 @@ function gameStart() {
 
 
 // write function that construct a game of rock paper scissor where you play 5 round and keep score and report the winner at the end.
-// write a function that record a score for each round.
+
 function checkScore() {
     
     if (computerScore !== 5 && playerScore !== 5) {
