@@ -46,11 +46,13 @@ function gameStart() {
     (playerChoice === "Scissor" && computerChoice === "Scissor")) {
         alert("It's a tie you both suck!");
     
-    } else if (playerChoice === "Rock" && computerChoice === "Scissor") {
+    } else if ((playerChoice === "Rock" && computerChoice === "Scissor") ||
+    (playerChoice === "Paper" && computerChoice === "Rock") ||
+    (playerChoice === "Scissor" && computerChoice === "Paper")) {
         alert ("You win! fucking hell");
         playerScore++ ;
     }  
-
+// this is the old code line of the function above in case something went wrong and for revisit purpose.
     // if (playerChoice === "Rock" && computerChoice === "Paper") {
     //     alert("You Suck paper beat Rock!");
     //     computerScore++ ;
@@ -83,14 +85,14 @@ function gameStart() {
 
 
 // write function that construct a game of rock paper scissor where you play 5 round and keep score and report the winner at the end.
-
+// write a function that record a score for each round.
 function checkScore() {
     
     if (computerScore !== 5 && playerScore !== 5) {
         alert ("Now Fight");
         humanScore = playerScore;
         botScore = computerScore;
-            
+      // write function to end a game when the winner is declared.      
     } else if (computerScore === 5) {
         alert ("The mankind is DEAD you lose!");
         alert ("Prepare for the Second round!");
@@ -111,8 +113,8 @@ function checkScore() {
 }
 let humanScore = document.getElementById('humanscore');
 let botScore = document.getElementById('botscore')
-// write a function that record a score for each round.
 
 
-// write function to end a game when the winner is declared.
+
+
 
