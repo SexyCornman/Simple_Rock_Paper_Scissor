@@ -96,14 +96,14 @@ function checkScore() {
       // write function to end a game when the winner is declared.      
     } else if (computerScore === 5) {
         alert ("The mankind is DEAD you lose!");
-        alert ("Prepare for the Second round!");
+        alert ("Prepare for another round!");
         computerScore = 0;
         playerScore = 0;
     
         
     } else if (playerScore === 5 ) {
         alert ("You win! mankind survivied!");
-        alert ("Prepare for the Second round!");
+        alert ("Now let's rewind and try that again!");
         computerScore =0;
         playerScore = 0;
     }
