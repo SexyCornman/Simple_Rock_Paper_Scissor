@@ -1,7 +1,7 @@
 
 
 // Write function to get computer random input ranging from rock, paper, scissor.
-let gameChoice = ["Rock","Paper","Scissor"]
+const gameChoice = ["Rock","Paper","Scissor"]
 let computerChoice
 function getComputerChoice() {
     computerChoice = gameChoice[(Math.floor(Math.random() * gameChoice.length))];   
