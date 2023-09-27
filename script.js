@@ -12,29 +12,45 @@ function getComputerChoice() {
   // if (computerChoice === "Knight"){
     //     barkeeperImg.src = "./img/fullknight.jpg";
     // }
-    // else if (computerChoice = "Mage"){
-    //     barkeeperImg.src === "./img/fullmage.jpg";
+    // else if (computerChoice === "Mage"){
+    //     barkeeperImg.src = "./img/fullmage.jpg";
     // } 
     // else if (computerChoice === "Rogue"){
     //     barkeeperImg.src = "./img/fullrogue.jpg";
     // }
 
+// function changeBarkeerpImg() {
+//       if (computerChoice === "Knight"){
+//         barkeeperImg.src = "./img/fullknight.jpg";
+//     }
+//     else if (computerChoice === "Mage"){
+//         barkeeperImg.src = "./img/fullmage.jpg";
+//     } 
+//     else if (computerChoice === "Rogue"){
+//         barkeeperImg.src = "./img/fullrogue.jpg";
+//     }
+    
+
+// }
 
 
 
 let playerChoice
 function playerChoiceKnight() {
     playerChoice = "Knight";
+    playerImg.src = "./img/fullknight.jpg";
     gameStart();
 }
 
 function playerChoiceMage() {
     playerChoice = "Mage";
+    playerImg.src ="./img/fullmage.jpg";
     gameStart();
 }
 
 function playerChoiceRogue() {
     playerChoice = "Rogue";
+    playerImg.src ="./img/fullrogue.jpg"
     gameStart();
 }
 
@@ -44,6 +60,7 @@ let playerScore = 0;
 
 function gameStart() {
     getComputerChoice()
+    // changeBarkeerpImg()
     
 
     if ((playerChoice === "Knight" && computerChoice === "Mage") || 
@@ -78,6 +95,7 @@ function checkScore() {
     } else if (computerScore === 5) {
         console.log ("The mankind is DEAD you lose!");
         console.log ("Prepare for another round!");
+        gameQuotes.innerText ="With a thunderous cheer, the tavern hails you as the victor!";
         computerScore = 0;
         playerScore = 0;
     
@@ -89,7 +107,8 @@ function checkScore() {
         playerScore = 0;
     }
    
-
+    playerScorePara.innerText = "Player Score: "+ playerScore;
+    computerScorePara.innerText = "Barkeep Score: "+computerScore;
     console.log("The Computer score " + computerScore + " Your Score " + playerScore );
    
 }
