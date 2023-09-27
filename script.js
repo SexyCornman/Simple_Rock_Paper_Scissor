@@ -55,7 +55,7 @@ function playerChoiceRogue() {
 }
 
 let computerScore = 0;
-let playerScore = 4;
+let playerScore = 0;
 
 
 function gameStart() {
@@ -74,6 +74,7 @@ function gameStart() {
     (playerChoice === "Mage" && computerChoice === "Mage") ||
     (playerChoice === "Rogue" && computerChoice === "Rogue")) {
         console.log("It's a tie you both suck!");
+        
     
     } else if ((playerChoice === "Knight" && computerChoice === "Rogue") ||
     (playerChoice === "Mage" && computerChoice === "Knight") ||
@@ -92,7 +93,7 @@ function checkScore() {
     if (computerScore !== 5 && playerScore !== 5) {
         console.log ("Now Fight");
         
-    } else if (computerScore === 5) {
+    } else if (computerScore === 3) {
         console.log ("The mankind is DEAD you lose!");
         console.log ("Prepare for another round!");
         gameQuotes.innerText ="The defeat stings, but there's always another brawl on the horizon.";
@@ -100,14 +101,14 @@ function checkScore() {
         playerScore = 0;
     
         
-    } else if (playerScore === 5 ) {
+    } else if (playerScore === 3 ) {
         console.log ("You win! mankind survivied!");
         console.log ("Now let's rewind and try that again!");
         gameQuotes.innerText = "With a thunderous cheer, the tavern hails you as the victor! Or are you up for another round?"
         computerScore =0;
         playerScore = 0;
     }
-   
+
     playerScorePara.innerText = "Player Score: "+ playerScore;
     computerScorePara.innerText = "Barkeep Score: "+computerScore;
     console.log("The Computer score " + computerScore + " Your Score " + playerScore );
