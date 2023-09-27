@@ -115,10 +115,10 @@ function changeGameQuotes(){
 
 function checkScore() {
     
-    if (computerScore !== 3 && playerScore !== 3) {
+    if (computerScore !== 5 && playerScore !== 5) {
         console.log ("Now Fight");
         
-    } else if (computerScore === 3) {
+    } else if (computerScore === 5) {
         console.log ("The mankind is DEAD you lose!");
         console.log ("Prepare for another round!");
         gameQuotes.innerText ="The defeat stings, but there's always another brawl on the horizon.";
@@ -126,7 +126,7 @@ function checkScore() {
         playerScore = 0;
     
         
-    } else if (playerScore === 3 ) {
+    } else if (playerScore === 5 ) {
         console.log ("You win! mankind survivied!");
         console.log ("Now let's rewind and try that again!");
         gameQuotes.innerText = "With a thunderous cheer, the tavern hails you as the victor! Or are you up for another round?"
