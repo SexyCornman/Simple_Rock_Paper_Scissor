@@ -18,18 +18,34 @@ body {
     
 }
 
-.scoreboard {
+.scoreboard,
+.player-section {
     display: flex;
-    flex-direction: column;
-    font-size: 1.5vw;
+    flex-direction: column;   
     align-items: center;
     color: #F1EFEF;
-    background: url(./img/tavernBG.jpg) no-repeat center fixed;
-    background-size: cover;
     text-shadow: 0 0 5px white,
-                 0 0 20px black,
-                 0 0 40px white;
+    0 0 20px black,
+    0 0 40px white;    
+    
 }
+
+.scoreboard {
+    background: url(./img/tavernBG.jpg) no-repeat center fixed;
+    background-size: cover;    
+    font-size: 1.5vw;
+    
+ 
+}
+
+.player-section {
+    font-size: 2vw;
+    background: url(./img/tavernBG2.jpg) no-repeat center fixed;
+    background-size: cover; 
+    gap: 2vw;
+
+}
+
 
 .gamequotes {
     padding: 5vw 8vw;
@@ -42,7 +58,7 @@ body {
 }
 
 .scoreimg{
-    max-width: 30vw;
+    max-width: 20vw;
     flex: 1;
     border-radius: 1vw;
     box-shadow: 0 0 5px white,
@@ -51,7 +67,6 @@ body {
 
 }
 
-
 .scorebox {
     display: flex;
     align-items: center;
@@ -59,3 +74,34 @@ body {
     gap: 24px;
     padding-bottom: 36px;
 }
+
+.barkeepquote {
+    padding: 1vw;
+}
+
+.barkeep-pic {
+    max-width: 50vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 5px white,
+    0 0 20px black;
+}
+.playerchoices{
+    display: flex;
+    gap: 3vw;
+    padding-bottom: 2vw;
+}
+.choice {
+    max-width: 8vw;
+    border-radius: 1vw;
+    border-style: solid;
+    background-color: white;
+}
+
+.footer{
+    background-color:#191717 ;
+    text-align: center;
+    color: #F1EFEF;
+    font-size: 1vw;
+    padding: 1vw;
+}
+    
