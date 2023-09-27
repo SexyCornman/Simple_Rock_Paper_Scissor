@@ -6,18 +6,8 @@ function getComputerChoice() {
  
     console.log("The computer choose " + computerChoice);
   
-    
 }
 
-  // if (computerChoice === "Knight"){
-    //     barkeeperImg.src = "./img/fullknight.jpg";
-    // }
-    // else if (computerChoice === "Mage"){
-    //     barkeeperImg.src = "./img/fullmage.jpg";
-    // } 
-    // else if (computerChoice === "Rogue"){
-    //     barkeeperImg.src = "./img/fullrogue.jpg";
-    // }
 
 function changeBarkeerpImg() {
       if (computerChoice === "Knight"){
@@ -124,6 +114,4 @@ function checkScore() {
 // const barkeeperImg = document.getElementById('barkeeper-img');
 // const playerScorePara = document.getElementById('player-score');
 // const computerScorePara= document.getElementById('barkeep-score');
-
-
 
