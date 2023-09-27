@@ -55,7 +55,7 @@ function playerChoiceRogue() {
 }
 
 let computerScore = 0;
-let playerScore = 0;
+let playerScore = 4;
 
 
 function gameStart() {
@@ -95,7 +95,7 @@ function checkScore() {
     } else if (computerScore === 5) {
         console.log ("The mankind is DEAD you lose!");
         console.log ("Prepare for another round!");
-        gameQuotes.innerText ="With a thunderous cheer, the tavern hails you as the victor!";
+        gameQuotes.innerText ="The defeat stings, but there's always another brawl on the horizon.";
         computerScore = 0;
         playerScore = 0;
     
@@ -103,6 +103,7 @@ function checkScore() {
     } else if (playerScore === 5 ) {
         console.log ("You win! mankind survivied!");
         console.log ("Now let's rewind and try that again!");
+        gameQuotes.innerText = "With a thunderous cheer, the tavern hails you as the victor! Or are you up for another round?"
         computerScore =0;
         playerScore = 0;
     }
