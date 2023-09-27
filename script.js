@@ -5,7 +5,11 @@ function getComputerChoice() {
     
  
     console.log("The computer choose " + computerChoice);
-    // if (computerChoice === "Knight"){
+  
+    
+}
+
+  // if (computerChoice === "Knight"){
     //     barkeeperImg.src = "./img/fullknight.jpg";
     // }
     // else if (computerChoice = "Mage"){
@@ -14,9 +18,6 @@ function getComputerChoice() {
     // else if (computerChoice === "Rogue"){
     //     barkeeperImg.src = "./img/fullrogue.jpg";
     // }
-    
-}
-
 
 
 

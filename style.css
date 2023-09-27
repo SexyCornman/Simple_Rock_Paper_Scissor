@@ -78,8 +78,9 @@ body {
     padding-bottom: 36px;
 }
 
-.barkeepquote {
-    padding: 0.5vw;
+.barkeepquote,
+.ruleset {
+    padding: 1vw;
 }
 
 .barkeep-pic {
@@ -92,7 +93,7 @@ body {
 .playerchoices{
     display: flex;
     gap: 3vw;
-    padding-top: 2vw;
+   
 }
 .choice {
     max-width: 8vw;
