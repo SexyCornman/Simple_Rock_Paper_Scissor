@@ -72,10 +72,22 @@ function gameStart() {
         console.log ("You win! fucking hell");
         playerScore++ ;
     }  
+    changeGameQuotes()
     checkScore();
+    
 }
 
-
+function changeGameQuotes(){
+    if(playerChoice === "Knight" && computerChoice === "Rogue"){
+        gameQuotes.innerText ="With valor and steel, honor prevails over shadows";
+    }
+    else if (playerChoice === "Rogue" && computerChoice === "Mage"){
+        gameQuotes.innerText ="Swift and silent, the Assassin dances beyond the Mage's reach.";
+    }
+    else if (playerChoice === "Mage" && computerChoice === "Knight"){
+        gameQuotes.innerText ="Arcane mastery triumphs over the mightiest of armor.";
+    }
+}
 
 
 function checkScore() {
