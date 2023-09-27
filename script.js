@@ -1,7 +1,7 @@
 
 
-// Write function to get computer random input ranging from rock, paper, scissor.
-const gameChoice = ["Rock","Paper","Scissor"]
+
+const gameChoice = ["Knight","Mage","Rogue"]
 let computerChoice
 function getComputerChoice() {
     computerChoice = gameChoice[(Math.floor(Math.random() * gameChoice.length))];   
@@ -12,44 +12,43 @@ function getComputerChoice() {
 
 
 
-// write function get user input ranging from rock, paper, scissor.
 let playerChoice
-function playerChoiceRock() {
-    playerChoice = "Rock";
+function playerChoiceKnight() {
+    playerChoice = "Knight";
     gameStart();
 }
 
-function playerChoicePaper() {
-    playerChoice = "Paper";
+function playerChoiceMage() {
+    playerChoice = "Mage";
     gameStart();
 }
 
-function playerChoiceScissor() {
-    playerChoice = "Scissor";
+function playerChoiceRogue() {
+    playerChoice = "Rogue";
     gameStart();
 }
 
 let computerScore = 0;
 let playerScore = 0;
 
-// write function that "Start" a single round of rock paper scissor and declare the winner
+
 function gameStart() {
     getComputerChoice()
-    if ((playerChoice === "Rock" && computerChoice === "Paper") || 
-    (playerChoice === "Paper" && computerChoice === "Scissor") ||
-    (playerChoice === "Scissor" && computerChoice === "Rock")){
+    if ((playerChoice === "Knight" && computerChoice === "Mage") || 
+    (playerChoice === "Mage" && computerChoice === "Rogue") ||
+    (playerChoice === "Rogue" && computerChoice === "Knight")){
         alert("You Suck " + computerChoice + " beat " + playerChoice) ;
-        // write a function that record a score for each round.
+       
         computerScore++ ;
    
-    } else if ((playerChoice === "Rock" && computerChoice === "Rock") ||
-    (playerChoice === "Paper" && computerChoice === "Paper") ||
-    (playerChoice === "Scissor" && computerChoice === "Scissor")) {
+    } else if ((playerChoice === "Knight" && computerChoice === "Knight") ||
+    (playerChoice === "Mage" && computerChoice === "Mage") ||
+    (playerChoice === "Rogue" && computerChoice === "Rogue")) {
         alert("It's a tie you both suck!");
     
-    } else if ((playerChoice === "Rock" && computerChoice === "Scissor") ||
-    (playerChoice === "Paper" && computerChoice === "Rock") ||
-    (playerChoice === "Scissor" && computerChoice === "Paper")) {
+    } else if ((playerChoice === "Knight" && computerChoice === "Rogue") ||
+    (playerChoice === "Mage" && computerChoice === "Knight") ||
+    (playerChoice === "Rogue" && computerChoice === "Mage")) {
         alert ("You win! fucking hell");
         playerScore++ ;
     }  
@@ -57,7 +56,7 @@ function gameStart() {
 }
 
 
-// write function that construct a game of rock paper scissor where you play 5 round and keep score and report the winner at the end.
+
 
 function checkScore() {
     
