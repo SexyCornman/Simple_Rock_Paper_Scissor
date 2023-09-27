@@ -9,10 +9,53 @@ body {
     background-color:#191717 ;
     text-align: center;
     color: #F1EFEF;
-    font-size: 64px;
+    font-size: 3vw;
     font-weight: 900;
-    padding: 24px;
-   
+    padding: 24px;  
+    text-shadow: 0 0 5px #CCC8AA,
+                 0 0 20px black,
+                 0 0 40px #CCC8AA;
     
 }
 
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    align-items: center;
+    color: #F1EFEF;
+    background: url(./img/tavernBG.jpg) no-repeat center fixed;
+    background-size: cover;
+    text-shadow: 0 0 5px white,
+                 0 0 20px black,
+                 0 0 40px white;
+}
+
+.gamequotes {
+    padding: 5vw 8vw;
+}
+.scorebox-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+}
+
+.scoreimg{
+    max-width: 30vw;
+    flex: 1;
+    border-radius: 1vw;
+    box-shadow: 0 0 5px white,
+    0 0 20px black;
+    
+
+}
+
+
+.scorebox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 36px;
+}
