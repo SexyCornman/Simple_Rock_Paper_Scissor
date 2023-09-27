@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thus a game of rock paper scissor begin</h1>
-    <h2>First to 5 ! Faith of the humanity lie upon your shoulder.</h2>
-    choose your weapon
-   
+   <div class="header">✲Tavern Brawl✲ </div>
 
-    <button class="choice" onclick="playerChoiceRock()">Rock</button>
-    <button class="choice" onclick="playerChoicePaper()">Paper</button>
-    <button class="choice" onclick="playerChoiceScissor()">Scissor</button>
+   <div class="scoreboard">
+   <div class="gamequotes" id="game-quotes">"Step up, brave soul, and join the fray in this raucous Tavern Brawl! Tonight, it's not just the spirits that flow, but the clash of champions! Care to wager against the wily barkeeper? Fortune favors the bold, so let the games commence"</div>
+
+   <div class="scorebox">
+<img src="img/mysteryman.jpg" alt="" class="playerimg" id="player-img">
+<div class="playerscore">Player Score:0</div>
+   </div>
+   <div class="scorebox">
+<img src="img/mysteryman.jpg" alt="" class="berkeeperimg" id="barkeeper-img">
+<div class="barkeeperscore">Barkeeper Score:0</div>
+   </div>
+
+   </div>
+
+  
+
+<div class="player-section">
+    
+    <div class="barkeepquote">Place your bet!</div>
+    <img src="/img/Barkeeper.jpg" alt="barkeeper" class="barkeep-pic">
+
+    <div class="playerchoices">
+        <img src="/img/Knight.png" alt="Knight" class="choice" onclick="playerChoiceRock()">
+        <img src="/img/Mage.png" alt="Mage" class="choice" onclick="playerChoicePaper()">
+        <img src="img/Rogue.png" alt="Rogue" class="rogue-choice" onclick="playerChoiceScissor()">
+      
+    </div>
+</div>
+
+<div class="footer">copyright © 2023 SexyCornman</div>
 <!-- <div class="scoreboard">
     <p>Human Score : <h4 id="humanscore">0</h4></p>
     <p>Computer Score: <h4 id="botscore">0</h4></p>
