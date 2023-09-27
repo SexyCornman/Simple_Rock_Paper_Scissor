@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.header {
+    background-color:#191717 ;
+    text-align: center;
+    color: #F1EFEF;
+    font-size: 64px;
+    font-weight: 900;
+    padding: 24px;
+   
+    
+}
+
