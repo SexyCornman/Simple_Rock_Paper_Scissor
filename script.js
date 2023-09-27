@@ -78,6 +78,8 @@ function gameStart() {
 }
 
 function changeGameQuotes(){
+
+    //winning
     if(playerChoice === "Knight" && computerChoice === "Rogue"){
         gameQuotes.innerText ="With valor and steel, honor prevails over shadows";
     }
@@ -86,6 +88,27 @@ function changeGameQuotes(){
     }
     else if (playerChoice === "Mage" && computerChoice === "Knight"){
         gameQuotes.innerText ="Arcane mastery triumphs over the mightiest of armor.";
+    }
+
+    //losing
+    else if (playerChoice === "Knight" && computerChoice === "Mage") {
+        gameQuotes.innerText ="Arcane mastery triumphs over the mightiest of armor.";
+    }
+    else if (playerChoice === "Mage" && computerChoice === "Rogue") {
+        gameQuotes.innerText ="Swift and silent, the Assassin dances beyond the Mage's reach.";
+    }
+    else if (playerChoice === "Rogue" && computerChoice === "Knight") {
+        gameQuotes.innerText ="With valor and steel, honor prevails over shadows";
+    }
+    //tie
+    else if(playerChoice === "Knight" && computerChoice === "Knight"){
+        gameQuotes.innerText ="Steel meets steel in a symphony of unyielding resolve.";
+    }
+    else if(playerChoice === "Mage" && computerChoice === "Mage"){
+        gameQuotes.innerText ="Arcane forces collide, creating a mesmerizing equilibrium.";
+    }
+    else if(playerChoice === "Rogue" && computerChoice === "Rogue"){
+        gameQuotes.innerText ="In shadows' dance, neither blade finds a telling strike.";
     }
 }
 
