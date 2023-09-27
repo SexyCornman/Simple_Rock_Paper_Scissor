@@ -62,8 +62,7 @@ body {
 
 .scoreimg{
     max-width: 20vw;
-    min-width: 150px;
-    flex: 1;
+    min-width: 150px;   
     border-radius: 1vw;
     box-shadow: 0 0 5px white,
     0 0 20px black;
