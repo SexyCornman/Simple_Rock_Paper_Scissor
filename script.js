@@ -19,19 +19,19 @@ function getComputerChoice() {
     //     barkeeperImg.src = "./img/fullrogue.jpg";
     // }
 
-// function changeBarkeerpImg() {
-//       if (computerChoice === "Knight"){
-//         barkeeperImg.src = "./img/fullknight.jpg";
-//     }
-//     else if (computerChoice === "Mage"){
-//         barkeeperImg.src = "./img/fullmage.jpg";
-//     } 
-//     else if (computerChoice === "Rogue"){
-//         barkeeperImg.src = "./img/fullrogue.jpg";
-//     }
+function changeBarkeerpImg() {
+      if (computerChoice === "Knight"){
+        barkeeperImg.src = "./img/fullknight.jpg";
+    }
+    else if (computerChoice === "Mage"){
+        barkeeperImg.src = "./img/fullmage.jpg";
+    } 
+    else if (computerChoice === "Rogue"){
+        barkeeperImg.src = "./img/fullrogue.jpg";
+    }
     
 
-// }
+}
 
 
 
@@ -60,7 +60,7 @@ let playerScore = 0;
 
 function gameStart() {
     getComputerChoice()
-    // changeBarkeerpImg()
+    changeBarkeerpImg()
     
 
     if ((playerChoice === "Knight" && computerChoice === "Mage") || 
@@ -90,7 +90,7 @@ function gameStart() {
 
 function checkScore() {
     
-    if (computerScore !== 5 && playerScore !== 5) {
+    if (computerScore !== 3 && playerScore !== 3) {
         console.log ("Now Fight");
         
     } else if (computerScore === 3) {

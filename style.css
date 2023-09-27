@@ -51,6 +51,7 @@ body {
 
 .gamequotes {
     padding: 5vw 8vw;
+    text-align: center;
 }
 .scorebox-container {
     display: flex;
