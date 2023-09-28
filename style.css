@@ -45,6 +45,7 @@ body {
     background: url(./img/tavernBG2.jpg) no-repeat center fixed;
     background-size: cover; 
     gap: 2vw;
+    margin-bottom: 0;
 
 }
 
@@ -115,9 +116,14 @@ body {
     
 /* animation */
 
-.choice img:hover{
+.choice:hover{
     box-shadow: 0 0 5px white,
-    0 0 20px red;
+    0 0 20px rgb(223, 157, 36);
 }
     
-
+.choice:active {
+    background-color: grey;
+    box-shadow: 0 0 5px white,
+    0 0 20px rgb(31, 218, 14);
+}
+}
