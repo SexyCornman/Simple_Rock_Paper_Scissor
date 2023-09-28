@@ -14,10 +14,12 @@
    <div class="gamequotes" id="game-quotes">"Step up, brave soul, and join the fray in this raucous Tavern Brawl! Tonight, it's not just the spirits that flow, but the clash of champions! Care to wager against the wily barkeeper? Fortune favors the bold, so let the games commence"</div>
 <div class="scorebox-container">
    <div class="scorebox">
+        <div id="player-choice">?</div>
         <img src="img/mysteryman.jpg" alt="" class="scoreimg" id="player-img">
         <div class="playerscore" id="player-score">Player Score:0</div>
    </div>
    <div class="scorebox">
+        <div id="barkeeper-choice">?</div>
         <img src="img/mysteryman.jpg" alt="" class="scoreimg" id="barkeeper-img">
         <div class="barkeeperscore" id="barkeep-score">Barkeeper Score:0</div>
    </div>
@@ -47,6 +49,8 @@
     const barkeeperImg = document.getElementById('barkeeper-img');
     const playerScorePara = document.getElementById('player-score');
     const computerScorePara= document.getElementById('barkeep-score');
+    const playerChoiceTxt = document.getElementById('player-choice');
+    const barkeeperChoiceTxt = document.getElementById('barkeeper-Choice');
 </script>
 
 <div class="footer">copyright © 2023 SexyCornman</div>    

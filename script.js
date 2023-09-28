@@ -12,12 +12,15 @@ function getComputerChoice() {
 function changeBarkeerpImg() {
       if (computerChoice === "Knight"){
         barkeeperImg.src = "img/fullknight.jpg";
+        barkeeperChoiceTxt.innerText = computerChoice;
     }
     else if (computerChoice === "Mage"){
         barkeeperImg.src = "img/fullmage.jpg";
+        barkeeperChoiceTxt.innerText = computerChoice;
     } 
     else if (computerChoice === "Rogue"){
         barkeeperImg.src = "img/fullrogue.jpg";
+        barkeeperChoiceTxt.innerText = computerChoice;
     }
     
 
@@ -28,19 +31,22 @@ function changeBarkeerpImg() {
 let playerChoice
 function playerChoiceKnight() {
     playerChoice = "Knight";
-    playerImg.src = "img/fullknight.jpg";
+    playerImg.src = "img/fullknight.jpg";  
+    playerChoiceTxt.innerText = playerChoice;  
     gameStart();
 }
 
 function playerChoiceMage() {
     playerChoice = "Mage";
     playerImg.src ="img/fullmage.jpg";
+    playerChoiceTxt.innerText = playerChoice;
     gameStart();
 }
 
 function playerChoiceRogue() {
     playerChoice = "Rogue";
     playerImg.src ="img/fullrogue.jpg"
+    playerChoiceTxt.innerText = playerChoice;
     gameStart();
 }
 
