@@ -9,7 +9,7 @@ function getComputerChoice() {
 }
 
 
-function changeBarkeerpImg() {
+function changeBarkeeperImg() {
       if (computerChoice === "Knight"){
         barkeeperImg.src = "img/fullknight.jpg";
         barkeeperChoiceTxt.innerText = computerChoice;
@@ -25,6 +25,7 @@ function changeBarkeerpImg() {
     
 
 }
+
 
 
 
@@ -56,7 +57,7 @@ let playerScore = 0;
 
 function gameStart() {
     getComputerChoice()
-    changeBarkeerpImg()
+    changeBarkeeperImg()
     
 
     if ((playerChoice === "Knight" && computerChoice === "Mage") || 
