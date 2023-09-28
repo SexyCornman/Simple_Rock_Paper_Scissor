@@ -26,6 +26,20 @@ function changeBarkeeperImg() {
 
 }
 
+function changeBarkeeperTxt() {
+    if (computerChoice === "Knight"){     
+        barkeeperChoiceTxt.innerText = computerChoice;
+    }
+    else if (computerChoice === "Mage"){       
+        barkeeperChoiceTxt.innerText = computerChoice;
+    } 
+    else if (computerChoice === "Rogue"){
+        
+        barkeeperChoiceTxt.innerText = computerChoice;
+    }
+
+}
+
 
 
 
@@ -58,6 +72,7 @@ let playerScore = 0;
 function gameStart() {
     getComputerChoice()
     changeBarkeeperImg()
+    changeBarkeeperTxt()
     
 
     if ((playerChoice === "Knight" && computerChoice === "Mage") || 
