@@ -161,14 +161,15 @@ function checkScore() {
     console.log("The Computer score " + computerScore + " Your Score " + playerScore );
    
 }
+//UI elements
+
+    const gameQuotes = document.getElementById('game-quotes');
+    const playerImg = document.getElementById('player-img');
+    const barkeeperImg = document.getElementById('barkeeper-img');
+    const playerScorePara = document.getElementById('player-score');
+    const computerScorePara= document.getElementById('barkeep-score');
+    const playerChoiceTxt = document.getElementById('player-choice');
+    const barkeeperChoiceTxt = document.getElementById('barkeeper-choice');
 
 
-
-// these are ui Element
-
-// const gameQuotes = document.getElementById('game-quotes');
-// const playerImg = document.getElementById('player-img');
-// const barkeeperImg = document.getElementById('barkeeper-img');
-// const playerScorePara = document.getElementById('player-score');
-// const computerScorePara= document.getElementById('barkeep-score');
 
